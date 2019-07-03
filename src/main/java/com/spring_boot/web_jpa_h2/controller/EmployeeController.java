@@ -26,6 +26,8 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
  * CONNECT	HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器。
  * OPTIONS	允许客户端查看服务器的性能。
  * TRACE	回显服务器收到的请求，主要用于测试或诊断。
+ * <p>
+ * PUT replaces an entire record. Fields not supplied will be replaced with null. PATCH can be used to update a subset of items.
  */
 @RestController
 @RequestMapping(value = "employee")
